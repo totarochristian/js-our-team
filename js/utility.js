@@ -31,14 +31,14 @@ function PrintArrayIntoConsole(arr){
 }
 function PrintArrayIntoDOM(arr){
     for(let i=0; i<arr.length; i++){
-        let str = `<div class="card" style="width: 18rem;">
-        <img src="../assets/img/${arr[i].image}" class="card-img-top" alt="Foto profilo di ${arr[i].surname} ${arr[i].name}">
-        <div class="card-body">
-          <h5 class="card-title">${arr[i].surname} ${arr[i].name}</h5>
-          <p class="card-text">${arr[i].role}</p>
-        </div>
-      </div>`;
-      document.body.innerHTML += str;
+        let str = `<div class="card">
+                        <img src="../assets/img/${arr[i].image}" class="card-img-top" alt="Foto profilo di ${arr[i].surname} ${arr[i].name}">
+                        <div class="card-body">
+                        <h5 class="card-title">${arr[i].surname} ${arr[i].name}</h5>
+                        <p class="card-text">${arr[i].role}</p>
+                        </div>
+                    </div>`;
+      document.getElementById("cardContainer").innerHTML += str;
     }
 }
 
