@@ -1,0 +1,6 @@
+{
+    "name" : ["Wayne","Angela","Walter","Angela","Scott","Barbara"],
+    "surname" : ["Barnett","Caroll","Gordon","Lopez","Estrada","Ramos"],
+    "role" : ["Founder & CEO","Chief Editor","Office Manager","Social Media Manager","Developer","Graphic Designer"],
+    "image" : ["wayne-barnett-founder-ceo.jpg","angela-caroll-chief-editor.jpg","walter-gordon-office-manager.jpg","angela-lopez-social-media-manager.jpg","scott-estrada-developer.jpg","barbara-ramos-graphic-designer.jpg"]
+}
