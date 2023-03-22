@@ -29,9 +29,22 @@ function PrintArrayIntoConsole(arr){
         console.log("Image: "+arr[i].image);
     }
 }
+function PrintArrayIntoDOM(arr){
+    for(let i=0; i<arr.length; i++){
+        let str = `<div class="card" style="width: 18rem;">
+        <img src="../assets/img/${arr[i].image}" class="card-img-top" alt="Foto profilo di ${arr[i].surname} ${arr[i].name}">
+        <div class="card-body">
+          <h5 class="card-title">${arr[i].surname} ${arr[i].name}</h5>
+          <p class="card-text">${arr[i].role}</p>
+        </div>
+      </div>`;
+      document.body.innerHTML += str;
+    }
+}
 
 async function MainProgram(){
     const arrayData = await TransformJsonDataToArray();
     
     PrintArrayIntoConsole(arrayData);
+    PrintArrayIntoDOM(arrayData);
 }
