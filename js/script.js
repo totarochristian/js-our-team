@@ -37,4 +37,5 @@ Tips of the day:
 ------------------------------------------------------------------------------
 */
 
-document.addEventListener("load",LoadJsonFile);
+const jsonData = LoadJsonFile();
+const arrayData = TransformJsonDataToArray(jsonData);

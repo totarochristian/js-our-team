@@ -1,4 +1,5 @@
 {
+    "numOfElements" : 6,
     "name" : ["Wayne","Angela","Walter","Angela","Scott","Barbara"],
     "surname" : ["Barnett","Caroll","Gordon","Lopez","Estrada","Ramos"],
     "role" : ["Founder & CEO","Chief Editor","Office Manager","Social Media Manager","Developer","Graphic Designer"],
