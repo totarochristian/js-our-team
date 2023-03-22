@@ -37,5 +37,4 @@ Tips of the day:
 ------------------------------------------------------------------------------
 */
 
-const jsonData = LoadJsonFile();
-const arrayData = TransformJsonDataToArray(jsonData);
+MainProgram();
