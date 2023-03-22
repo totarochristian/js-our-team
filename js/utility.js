@@ -21,9 +21,17 @@ function TransformDataToObject(index, jsonData){
     };
     return obj;
 }
+function PrintArrayIntoConsole(arr){
+    for(let i=0; i<arr.length; i++){
+        console.log("---------- Member "+(i+1)+" ----------");
+        console.log("Name and surname: "+arr[i].name+" "+arr[i].surname);
+        console.log("Role: "+arr[i].role);
+        console.log("Image: "+arr[i].image);
+    }
+}
 
 async function MainProgram(){
     const arrayData = await TransformJsonDataToArray();
-    console.log(arrayData);
-    console.log(arrayData[0]);
+    
+    PrintArrayIntoConsole(arrayData);
 }
